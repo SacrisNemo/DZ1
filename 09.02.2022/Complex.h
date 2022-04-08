@@ -8,8 +8,11 @@
 using namespace std;
 struct Complex 
 {
-	double re = 0;
-	double im = 0;
+	double re;
+	double im;
+	Complex();
+	Complex(double, double);
+	Complex(int, int);
 	Complex sum(Complex n1);
 	Complex razn(Complex n1);
 	Complex umn(Complex n1);
@@ -17,6 +20,7 @@ struct Complex
 	void print();
 	double mod();
 	bool compare(Complex n1);
+	~Complex();
 };
 
 #endif
