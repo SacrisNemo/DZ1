@@ -17,4 +17,5 @@ int main()
 		arr[i] = a;
 		if (arr[i].mod() > max) max = arr[i].mod();
 	}
+	// proverka
 }
