@@ -5,14 +5,15 @@
 #include <fstream>
 #include <vector>
 
-using namespace std;
-struct Complex 
+struct Complex
 {
 	double re;
 	double im;
 	Complex();
 	Complex(double, double);
 	Complex(int, int);
+	void set(double, double);
+	void set(int, int);
 	Complex sum(Complex n1);
 	Complex razn(Complex n1);
 	Complex umn(Complex n1);
@@ -22,5 +23,6 @@ struct Complex
 	bool compare(Complex n1);
 	~Complex();
 };
+
 
 #endif

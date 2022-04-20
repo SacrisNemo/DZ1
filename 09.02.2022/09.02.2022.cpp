@@ -3,7 +3,7 @@
 #include <fstream>
 int main()
 {
-	ifstream f; 
+	std::ifstream f; 
 	f.open("C:\\Users\\azama\\source\\repos\\09.02.2022\\complex.txt");
 	int n;
 	f >> n;
