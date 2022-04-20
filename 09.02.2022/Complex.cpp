@@ -23,6 +23,18 @@ Complex::Complex(const Complex& other)
 	this->im = other.im;
 }
 
+void Complex::set(double re, double im)
+{
+	this->re = re;
+	this->im = im;
+}
+
+void Complex::set(int re, int im)
+{
+	this->re = re;
+	this->im = im;
+}
+
 Complex Complex::sum(Complex n1)
 {
 	return Complex{ n1.re + this->re,n1.im + this->im };
