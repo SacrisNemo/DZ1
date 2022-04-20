@@ -12,6 +12,7 @@ struct Complex
 	Complex();
 	Complex(double, double);
 	Complex(int, int);
+	Complex(const Complex& other);
 	void set(double, double);
 	void set(int, int);
 	Complex sum(Complex n1);

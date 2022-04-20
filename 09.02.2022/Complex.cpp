@@ -17,6 +17,12 @@ Complex::Complex(int x, int y)
 	this->im = y;
 }
 
+Complex::Complex(const Complex& other)
+{
+	this->re = other.re;
+	this->im = other.im;
+}
+
 Complex Complex::sum(Complex n1)
 {
 	return Complex{ n1.re + this->re,n1.im + this->im };
